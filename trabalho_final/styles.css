@@ -214,7 +214,9 @@ body{
     width: fit-content;
     margin: 3rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding-right: 2rem;
     padding-left: 2rem;
     border-color: var(--fonte-banner);
@@ -239,6 +241,31 @@ body{
     flex-direction: row;
     gap: 1rem;
 }
+
+.enviar {
+    width: fit-content;
+    cursor: pointer;
+    padding: 0.5rem;
+    align-self: center;
+    border-color: var(--fonte-banner);
+    border-style: ridge;
+    border-width: 3px;
+    border-radius: 8px;
+    background-color: var(--fundo-banner);
+    font-family: "Eagle Lake", serif;
+    color: var(--fonte-banner);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 30px, rgba(0, 0, 0, 0.22) 0px 12px 10px;
+}
+
+.enviar:hover{
+    background-color:var(--fundo-site);
+}
+
+.enviar:active {
+    transform: translateY(2px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 19px, rgba(0, 0, 0, 0.22) 0px 7px 6px;
+}
+
 
 .rodape {
     width: 100%;
